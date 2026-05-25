@@ -1,0 +1,51 @@
+[
+  {
+    "id": "PR1",
+    "name": "Vereda do Areeiro",
+    "distance": "14 km",
+    "difficulty": "schwer",
+    "warnings": [
+      "Treppen",
+      "Tunnel",
+      "früh starten"
+    ],
+    "reward": "extrem hoch",
+    "image": "assets/pr1.png"
+  },
+  {
+    "id": "PR8",
+    "name": "Ponta de São Lourenço",
+    "distance": "6 km",
+    "difficulty": "moderat",
+    "warnings": [
+      "Wind",
+      "kaum Schatten"
+    ],
+    "reward": "hoch",
+    "image": "assets/pr8.png"
+  },
+  {
+    "id": "PR9",
+    "name": "Levada do Caldeirão Verde",
+    "distance": "13 km",
+    "difficulty": "moderat",
+    "warnings": [
+      "Tunnel",
+      "feuchte Wege"
+    ],
+    "reward": "sehr hoch",
+    "image": "assets/pr9.png"
+  },
+  {
+    "id": "PR13",
+    "name": "Vereda do Fanal",
+    "distance": "10.8 km",
+    "difficulty": "moderat",
+    "warnings": [
+      "Nebel",
+      "nasse Wege"
+    ],
+    "reward": "atmosphärisch",
+    "image": "assets/pr13.png"
+  }
+]
