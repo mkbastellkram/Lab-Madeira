@@ -2,93 +2,22 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PR Explorer Lab</title>
-<style>
-body {
-    background:#111;
-    color:#eee;
-    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-    margin:0;
-    padding:20px;
-}
-.card {
-    background:#1c1c1e;
-    border-radius:18px;
-    padding:18px;
-    max-width:420px;
-    margin:auto;
-    border:1px solid #2f2f31;
-}
-.badge {
-    display:inline-block;
-    padding:4px 10px;
-    border-radius:999px;
-    background:#203025;
-    color:#6ee7a8;
-    font-size:12px;
-}
-.grid {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:8px;
-    margin:16px 0;
-}
-.stat {
-    background:#161617;
-    padding:10px;
-    border-radius:12px;
-    text-align:center;
-}
-.links a {
-    display:inline-block;
-    margin:4px;
-    padding:8px 12px;
-    border-radius:10px;
-    background:#2a2a2d;
-    color:#fff;
-    text-decoration:none;
-    font-size:13px;
-}
-.warn {
-    color:#ffcc66;
-}
-</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PR Explorer</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+<meta name="theme-color" content="#101412">
 </head>
 <body>
+<header class="topbar">
+  <div>
+    <h1>PR Explorer</h1>
+    <p>Madeira · Compact Decision System</p>
+  </div>
+</header>
 
-<div class="card">
-    <span class="badge">PR1</span>
-    <h2>Vereda do Areeiro</h2>
+<main id="cards"></main>
 
-    <div class="grid">
-        <div class="stat">
-            <div>14 km</div>
-            <small>Distanz</small>
-        </div>
-        <div class="stat">
-            <div>schwer</div>
-            <small>Level</small>
-        </div>
-        <div class="stat">
-            <div>Sunrise</div>
-            <small>Highlight</small>
-        </div>
-    </div>
-
-    <p class="warn">⚠ Nebel · Wind · früh starten</p>
-
-    <p>
-        Wolkenmeer, Tunnel, Grate, spektakuläre Ausblicke.
-    </p>
-
-    <div class="links">
-        <a href="https://visitmadeira.com/" target="_blank">Offiziell</a>
-        <a href="https://www.madeira-wetter.info" target="_blank">Wetter</a>
-        <a href="https://www.youtube.com/results?search_query=PR1+Madeira" target="_blank">YouTube</a>
-        <a href="https://www.instagram.com/explore/tags/pr1madeira/" target="_blank">Instagram</a>
-    </div>
-</div>
-
+<script src="app.js"></script>
 </body>
 </html>
