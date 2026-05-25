@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>PR Explorer</title>
+<meta name="theme-color" content="#0c1210">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="app-header">
+  <div class="header-main">
+    <div>
+      <h1>PR Explorer</h1>
+      <p>Madeira · kompakt · entscheidungsstark</p>
+    </div>
+    <button id="viewToggle" class="icon-btn" aria-label="Ansicht wechseln">⌁</button>
+  </div>
+  <input id="search" class="search" placeholder="PR, Region, Tunnel, Levada suchen">
+  <div id="chips" class="chips">
+    <button class="chip active" data-filter="">Alle</button>
+    <button class="chip" data-filter="leicht">Leicht</button>
+    <button class="chip" data-filter="moderat">Moderat</button>
+    <button class="chip" data-filter="schwer">Schwer</button>
+    <button class="chip" data-feature="tunnel">Tunnel</button>
+    <button class="chip" data-feature="coast">Küste</button>
+    <button class="chip" data-feature="waterfall">Wasser</button>
+  </div>
+</header>
+
+<main id="app" class="cards"></main>
+
+<section id="sheetBackdrop" class="sheet-backdrop" aria-hidden="true">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <button class="sheet-close" id="closeSheet">×</button>
+    <div class="sheet-hero" id="sheetHero"></div>
+    <div class="sheet-content">
+      <div class="eyebrow" id="sheetId"></div>
+      <h2 id="sheetTitle"></h2>
+      <p id="sheetSignature"></p>
+
+      <div class="stats-grid">
+        <div><b id="sheetDistance"></b><span>Distanz</span></div>
+        <div><b id="sheetDifficulty"></b><span>Level</span></div>
+        <div><b id="sheetStress"></b><span>Stress</span></div>
+        <div><b id="sheetDay"></b><span>Tag</span></div>
+      </div>
+
+      <div class="profile-card">
+        <div class="mini-map">
+          <div class="route-line"></div>
+          <span>Track / Karte</span>
+        </div>
+        <div class="elevation">
+          <svg viewBox="0 0 300 90" preserveAspectRatio="none">
+            <path d="M0,72 C30,65 42,42 72,55 C110,72 120,16 156,30 C190,44 203,65 238,42 C260,30 280,55 300,48 L300,90 L0,90 Z"></path>
+          </svg>
+          <span>Höhenprofil-Platzhalter · später aus GPX</span>
+        </div>
+      </div>
+
+      <div class="info-block warning">
+        <h3>Reality Check</h3>
+        <ul id="sheetReality"></ul>
+      </div>
+
+      <div class="info-block">
+        <h3>In der Nähe</h3>
+        <ul id="sheetNearby"></ul>
+      </div>
+
+      <div class="info-block file-block">
+        <h3>Dateien</h3>
+        <div id="fileLinks"></div>
+      </div>
+
+      <div class="link-grid">
+        <a id="lnkGoogle" target="_blank" rel="noopener">Google</a>
+        <a id="lnkYoutube" target="_blank" rel="noopener">YouTube</a>
+        <a id="lnkInsta" target="_blank" rel="noopener">Instagram</a>
+        <a id="lnkKomoot" target="_blank" rel="noopener">Komoot via Google</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="bottom-nav">
+  <button class="active">Entdecken</button>
+  <button>Karte</button>
+  <button>Favoriten</button>
+  <button>Mehr</button>
+</nav>
+
+<script src="data/trails.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

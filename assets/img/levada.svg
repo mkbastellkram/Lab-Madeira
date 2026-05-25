@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+<defs>
+<linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+<stop stop-color="#183e2b" offset="0"/>
+<stop stop-color="#22472f" offset="1"/>
+</linearGradient>
+</defs>
+<rect width="1200" height="760" fill="url(#g)"/>
+<path d="M0 610 L210 360 L430 560 L690 285 L1200 610 V760 H0 Z" fill="#74bd66" opacity=".42"/>
+<path d="M0 690 L280 500 L540 650 L825 420 L1200 640 V760 H0 Z" fill="#22472f" opacity=".76"/>
+<circle cx="980" cy="130" r="76" fill="#74bd66" opacity=".35"/>
+<text x="60" y="90" fill="white" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="48" font-weight="700">Bildslot</text>
+<text x="60" y="145" fill="white" opacity=".75" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28">echtes Foto später GEO-geprüft einsetzen</text>
+</svg>
