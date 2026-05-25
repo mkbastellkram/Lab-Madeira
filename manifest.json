@@ -1,8 +1,0 @@
-{
-  "name": "PR Explorer",
-  "short_name": "PR Explorer",
-  "display": "standalone",
-  "background_color": "#0f1412",
-  "theme_color": "#0f1412",
-  "start_url": "./index.html"
-}
